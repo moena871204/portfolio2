@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+/* commoc */
+
+*{
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  box-sizing: border-box;
+}
+h1{
+  font-size: 0;
+}
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h2{
+  text-align: center;
+}
+
+/* header */
+
+header{
+  padding: 32px 0 16px;
+  text-align: center;
+}
+header ul{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+header li{
+  list-style: none;
+}
+header li:hover{
+  opacity: .7;
+}
+header a{
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+.headimg{
+  height: 420px;
+  background: url(header.jpg) center;
+  margin-top: 16px; 
+}
+
+/* main */
+
+main{
+  padding: 64px 16px;
+}
+
+h3{
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 32px;
+}
+#about ul{
+  margin-top: 32px;
+}
+#about li{
+  list-style: none;
+}
+#about p{
+  margin-top: 32px;
+}
+
+#works{
+  margin-top: 64px;
+}
+#works li{
+  list-style: none;
+}
+#works img{
+  width: 100%;
+  height: auto;
+  margin-top: 32px;
+}
+
+#news{
+  margin-top: 64px;
+}
+#news ul{
+  margin-top: 32px;
+}
+#news li{
+  list-style: none;
+  border-top: 1px solid #bbb;
+  padding: 16px;
+}
+.bottom{
+  border-bottom: 1px solid #bbb;
+}
+
+#contact{
+  margin-top: 64px;
+}
+label{
+  font-size: 14px;
+}
+.text{
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #bbb;
+}
+form{
+  margin-top: 32px;
+}
+label{
+  display: block;
+  margin-top: 8px;
+}
+button{
+  background: #333;
+  color: white;
+  padding: 16px 90px;
+  display: block;
+  margin: 32px auto 0;
+}
+button:hover{
+  background: white;
+  color: black;
+}
+
+/* footer */
+
+footer{
+  background: #333;
+  text-align: center;
+}
+small{
+  font-size: 8px;
+  color: white;
+  line-height: 32px;
+}
+
+@media(min-width:600px){
+  
+  /* header */
+
+  .headnav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  .headnav ul{
+    margin: 0;
+    gap: 32px;
+  }
+  header{
+    padding-top: 112px;
+  }
+  .headimg{
+    margin-top: 96px;
+  }
+
+  /* main */
+
+  #works h2{
+    margin-top: 96px;
+  }
+  #works ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  #works li{
+    width: calc((100% - 32px) / 3);
+  }
+
+  #news li{
+    display: flex;
+    gap: 64px;
+  }
+
+  #contact h2{
+    margin-top: 112px;
+  }
+  form p{
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .text{
+    width: 84%;
+  }
+
+  footer{
+    margin-top: 80px;
+  }
+
+}
